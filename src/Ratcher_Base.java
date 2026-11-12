@@ -71,9 +71,6 @@ public class Ratcher_Base {
             tablero[filaAl][colAl] = piezas;;
         }
 
-        for (int i = 0; i < 20; i++) {
-            System.out.println();
-        }
         char curas = 'P';
         for (int i = 0; i < 5; i++) {
             do{
@@ -88,6 +85,7 @@ public class Ratcher_Base {
             }
             System.out.println();
         }
+
         // EMPIEZA EL JUEGO !!!
         int vidas = 10;
         int fin1 = 0;
@@ -98,6 +96,7 @@ public class Ratcher_Base {
             char mov = lector.next().charAt(0);
             int filaAnteriorRacher = filaOficialRacher;
             int columnaAnteriorRacher = columnaOficioalRacher;
+            
             switch (Character.toUpperCase(mov)){ // W, A, S o D
                 case 'W':
                     filaOficialRacher --;
